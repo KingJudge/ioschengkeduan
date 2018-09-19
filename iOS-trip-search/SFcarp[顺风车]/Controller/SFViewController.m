@@ -24,8 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    self.contentViewFrame = CGRectMake(0, 64, screenSize.width, screenSize.height - 64);
-    self.tabBar.frame = CGRectMake(0, 20, screenSize.width, 44);
+    self.contentViewFrame = CGRectMake(0, 0, screenSize.width, screenSize.height - 64);
+    self.tabBar.frame = CGRectMake(0, 0, screenSize.width, 44);
     
     self.tabBar.itemTitleColor = [UIColor lightGrayColor];
     self.tabBar.itemTitleSelectedColor = [UIColor orangeColor];
