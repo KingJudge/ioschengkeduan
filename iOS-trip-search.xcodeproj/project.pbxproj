@@ -15,6 +15,13 @@
 		2AFD50E22151EB5D00AE87F6 /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50E02151EB5D00AE87F6 /* ZJSwitch.m */; };
 		2AFD50E82151F13600AE87F6 /* comPleteInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50E72151F13600AE87F6 /* comPleteInfoViewController.m */; };
 		2AFD50EB2151F8B000AE87F6 /* comPleteHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50EA2151F8B000AE87F6 /* comPleteHeaderView.m */; };
+		2AFD50F32152333A00AE87F6 /* YPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50EE2152333A00AE87F6 /* YPTabBar.m */; };
+		2AFD50F42152333A00AE87F6 /* YPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50F02152333A00AE87F6 /* YPTabBarController.m */; };
+		2AFD50F52152333A00AE87F6 /* YPTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50F22152333A00AE87F6 /* YPTabItem.m */; };
+		2AFD50F92152337100AE87F6 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50F82152337100AE87F6 /* SFViewController.m */; };
+		2AFD50FF215233C700AE87F6 /* SFcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50FE215233C700AE87F6 /* SFcityViewController.m */; };
+		2AFD5102215233D900AE87F6 /* SFotherCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5101215233D900AE87F6 /* SFotherCityViewController.m */; };
+		2AFD51052152340500AE87F6 /* SFinviteDriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD51042152340500AE87F6 /* SFinviteDriverViewController.m */; };
 		6A1786F51F03955200B909CC /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA3A201EFBA28D00205528 /* MyLocation.m */; };
 		6A6C500D1ED5261F00A14DA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C500C1ED5261F00A14DA0 /* main.m */; };
 		6A6C50101ED5261F00A14DA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C500F1ED5261F00A14DA0 /* AppDelegate.m */; };
@@ -87,6 +94,20 @@
 		2AFD50E72151F13600AE87F6 /* comPleteInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comPleteInfoViewController.m; sourceTree = "<group>"; };
 		2AFD50E92151F8B000AE87F6 /* comPleteHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comPleteHeaderView.h; sourceTree = "<group>"; };
 		2AFD50EA2151F8B000AE87F6 /* comPleteHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comPleteHeaderView.m; sourceTree = "<group>"; };
+		2AFD50ED2152333A00AE87F6 /* YPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTabBar.h; sourceTree = "<group>"; };
+		2AFD50EE2152333A00AE87F6 /* YPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTabBar.m; sourceTree = "<group>"; };
+		2AFD50EF2152333A00AE87F6 /* YPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTabBarController.h; sourceTree = "<group>"; };
+		2AFD50F02152333A00AE87F6 /* YPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTabBarController.m; sourceTree = "<group>"; };
+		2AFD50F12152333A00AE87F6 /* YPTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTabItem.h; sourceTree = "<group>"; };
+		2AFD50F22152333A00AE87F6 /* YPTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTabItem.m; sourceTree = "<group>"; };
+		2AFD50F72152337100AE87F6 /* SFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		2AFD50F82152337100AE87F6 /* SFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		2AFD50FD215233C700AE87F6 /* SFcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFcityViewController.h; sourceTree = "<group>"; };
+		2AFD50FE215233C700AE87F6 /* SFcityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFcityViewController.m; sourceTree = "<group>"; };
+		2AFD5100215233D900AE87F6 /* SFotherCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFotherCityViewController.h; sourceTree = "<group>"; };
+		2AFD5101215233D900AE87F6 /* SFotherCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFotherCityViewController.m; sourceTree = "<group>"; };
+		2AFD51032152340500AE87F6 /* SFinviteDriverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFinviteDriverViewController.h; sourceTree = "<group>"; };
+		2AFD51042152340500AE87F6 /* SFinviteDriverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFinviteDriverViewController.m; sourceTree = "<group>"; };
 		3BEA118D8C9A8FD6E8EEDC7F /* Pods-iOS-trip-search-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-trip-search-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-trip-search-swift/Pods-iOS-trip-search-swift.release.xcconfig"; sourceTree = "<group>"; };
 		5E21485C40D709A0551A7CE2 /* Pods-iOS-trip-search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-trip-search.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-trip-search/Pods-iOS-trip-search.release.xcconfig"; sourceTree = "<group>"; };
 		6A6C50081ED5261F00A14DA0 /* iOS-trip-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-trip-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +292,7 @@
 		2AFD50DE2151EB3F00AE87F6 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				2AFD50EC2152333A00AE87F6 /* YPTabBarController */,
 				2AFD50DF2151EB4A00AE87F6 /* ZJSwitch */,
 			);
 			path = 3rd;
@@ -310,6 +332,58 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2AFD50EC2152333A00AE87F6 /* YPTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD50ED2152333A00AE87F6 /* YPTabBar.h */,
+				2AFD50EE2152333A00AE87F6 /* YPTabBar.m */,
+				2AFD50EF2152333A00AE87F6 /* YPTabBarController.h */,
+				2AFD50F02152333A00AE87F6 /* YPTabBarController.m */,
+				2AFD50F12152333A00AE87F6 /* YPTabItem.h */,
+				2AFD50F22152333A00AE87F6 /* YPTabItem.m */,
+			);
+			path = YPTabBarController;
+			sourceTree = "<group>";
+		};
+		2AFD50F62152334000AE87F6 /* SFcarp[顺风车] */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD50FC2152339F00AE87F6 /* Model */,
+				2AFD50FB2152339800AE87F6 /* View */,
+				2AFD50FA2152338B00AE87F6 /* Controller */,
+			);
+			path = "SFcarp[顺风车]";
+			sourceTree = "<group>";
+		};
+		2AFD50FA2152338B00AE87F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD50F72152337100AE87F6 /* SFViewController.h */,
+				2AFD50F82152337100AE87F6 /* SFViewController.m */,
+				2AFD50FD215233C700AE87F6 /* SFcityViewController.h */,
+				2AFD50FE215233C700AE87F6 /* SFcityViewController.m */,
+				2AFD5100215233D900AE87F6 /* SFotherCityViewController.h */,
+				2AFD5101215233D900AE87F6 /* SFotherCityViewController.m */,
+				2AFD51032152340500AE87F6 /* SFinviteDriverViewController.h */,
+				2AFD51042152340500AE87F6 /* SFinviteDriverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2AFD50FB2152339800AE87F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AFD50FC2152339F00AE87F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6A6C4FFF1ED5261F00A14DA0 = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +410,7 @@
 		6A6C500A1ED5261F00A14DA0 /* iOS-trip-search */ = {
 			isa = PBXGroup;
 			children = (
+				2AFD50F62152334000AE87F6 /* SFcarp[顺风车] */,
 				2AFD50DE2151EB3F00AE87F6 /* 3rd */,
 				2A724EB72151E65100F3FDEB /* completeInfo[完善信息] */,
 				2A724EAD2151D9A000F3FDEB /* perCenter[个人中心] */,
@@ -662,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFD51052152340500AE87F6 /* SFinviteDriverViewController.m in Sources */,
 				6A6C50481ED9330A00A14DA0 /* AddressSettingViewController.m in Sources */,
 				2A29529E2150D9BC00D9A7AB /* waitDriverViewController.m in Sources */,
 				6AAA3A211EFBA28D00205528 /* MyLocation.m in Sources */,
@@ -672,12 +748,18 @@
 				2AFD50E82151F13600AE87F6 /* comPleteInfoViewController.m in Sources */,
 				2AFD50EB2151F8B000AE87F6 /* comPleteHeaderView.m in Sources */,
 				6A6C50271ED5386D00A14DA0 /* MyCity.m in Sources */,
+				2AFD50FF215233C700AE87F6 /* SFcityViewController.m in Sources */,
 				6A6C502A1ED5388500A14DA0 /* MyCityManager.m in Sources */,
 				6A6C50441ED8313300A14DA0 /* MyLocationHeaderCell.m in Sources */,
+				2AFD50F42152333A00AE87F6 /* YPTabBarController.m in Sources */,
+				2AFD50F92152337100AE87F6 /* SFViewController.m in Sources */,
+				2AFD50F52152333A00AE87F6 /* YPTabItem.m in Sources */,
 				6A6C500D1ED5261F00A14DA0 /* main.m in Sources */,
+				2AFD5102215233D900AE87F6 /* SFotherCityViewController.m in Sources */,
 				2AFD50E22151EB5D00AE87F6 /* ZJSwitch.m in Sources */,
 				6A6C50401ED8261700A14DA0 /* MyRecordManager.m in Sources */,
 				2A724EB32151D9D300F3FDEB /* perCenterViewController.m in Sources */,
+				2AFD50F32152333A00AE87F6 /* YPTabBar.m in Sources */,
 				6A6C50341ED53F0C00A14DA0 /* MySearchResultView.m in Sources */,
 				6A6C502E1ED53CD800A14DA0 /* MyLocationView.m in Sources */,
 				6A6C50311ED53EFD00A14DA0 /* MyCityListView.m in Sources */,

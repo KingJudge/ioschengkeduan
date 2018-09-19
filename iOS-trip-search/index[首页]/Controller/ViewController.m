@@ -22,6 +22,7 @@
 
 #import "waitDriverViewController.h"
 #import "perCenterViewController.h"
+#import "SFViewController.h"
 
 #define kTableViewMargin    8
 #define kNaviBarHeight      60
@@ -187,6 +188,16 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
 -(void)pageTitleView:(SGPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex{
     NSLog(@"选择了===%@",self.titleArr[selectedIndex]);
     _carType = [NSString stringWithFormat:@"%@",self.titleArr[selectedIndex]];
+    SFViewController *sfCar = [[SFViewController alloc]init];
+    switch (selectedIndex) {
+            case 3:
+            NSLog(@"顺风车");
+            [self.navigationController pushViewController:sfCar animated:YES];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)pageContentScrollView:(SGPageContentScrollView *)pageContentScrollView progress:(CGFloat)progress originalIndex:(NSInteger)originalIndex targetIndex:(NSInteger)targetIndex {
