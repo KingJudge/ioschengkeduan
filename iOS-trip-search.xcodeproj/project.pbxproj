@@ -11,6 +11,7 @@
 		2A2952A12150DDD700D9A7AB /* growAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A29529F2150DDD700D9A7AB /* growAnnotationView.m */; };
 		2A2952A42150E04500D9A7AB /* driverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2952A32150E04500D9A7AB /* driverInfo.m */; };
 		2A2DC93A21532DBA005DC6A0 /* OrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC93921532DBA005DC6A0 /* OrderListViewController.m */; };
+		2A2DC9422153335D005DC6A0 /* editInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC9412153335D005DC6A0 /* editInfoViewController.m */; };
 		2A724EB32151D9D300F3FDEB /* perCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A724EB22151D9D300F3FDEB /* perCenterViewController.m */; };
 		2A724EB62151DAAA00F3FDEB /* perHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A724EB52151DAAA00F3FDEB /* perHeaderView.m */; };
 		2AFD50E22151EB5D00AE87F6 /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD50E02151EB5D00AE87F6 /* ZJSwitch.m */; };
@@ -87,6 +88,8 @@
 		2A2952A32150E04500D9A7AB /* driverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = driverInfo.m; sourceTree = "<group>"; };
 		2A2DC93821532DBA005DC6A0 /* OrderListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderListViewController.h; sourceTree = "<group>"; };
 		2A2DC93921532DBA005DC6A0 /* OrderListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderListViewController.m; sourceTree = "<group>"; };
+		2A2DC9402153335D005DC6A0 /* editInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editInfoViewController.h; sourceTree = "<group>"; };
+		2A2DC9412153335D005DC6A0 /* editInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editInfoViewController.m; sourceTree = "<group>"; };
 		2A724EB12151D9D300F3FDEB /* perCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = perCenterViewController.h; sourceTree = "<group>"; };
 		2A724EB22151D9D300F3FDEB /* perCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = perCenterViewController.m; sourceTree = "<group>"; };
 		2A724EB42151DAAA00F3FDEB /* perHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = perHeaderView.h; sourceTree = "<group>"; };
@@ -216,6 +219,39 @@
 			sourceTree = "<group>";
 		};
 		2A2DC93721532D9E005DC6A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A2DC93C2153330B005DC6A0 /* editInfo[编辑信息] */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DC93F21533342005DC6A0 /* Model */,
+				2A2DC93E2153333D005DC6A0 /* View */,
+				2A2DC93D21533331005DC6A0 /* Controller */,
+			);
+			path = "editInfo[编辑信息]";
+			sourceTree = "<group>";
+		};
+		2A2DC93D21533331005DC6A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DC9402153335D005DC6A0 /* editInfoViewController.h */,
+				2A2DC9412153335D005DC6A0 /* editInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A2DC93E2153333D005DC6A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A2DC93F21533342005DC6A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -446,6 +482,7 @@
 		6A6C500A1ED5261F00A14DA0 /* iOS-trip-search */ = {
 			isa = PBXGroup;
 			children = (
+				2A2DC93C2153330B005DC6A0 /* editInfo[编辑信息] */,
 				2A2DC93421532D66005DC6A0 /* OrderList[订单列表] */,
 				2AFD50F62152334000AE87F6 /* SFcarp[顺风车] */,
 				2AFD50DE2151EB3F00AE87F6 /* 3rd */,
@@ -792,6 +829,7 @@
 				2AFD50F42152333A00AE87F6 /* YPTabBarController.m in Sources */,
 				2AFD50F92152337100AE87F6 /* SFViewController.m in Sources */,
 				2AFD50F52152333A00AE87F6 /* YPTabItem.m in Sources */,
+				2A2DC9422153335D005DC6A0 /* editInfoViewController.m in Sources */,
 				6A6C500D1ED5261F00A14DA0 /* main.m in Sources */,
 				2AFD5102215233D900AE87F6 /* SFotherCityViewController.m in Sources */,
 				2AFD50E22151EB5D00AE87F6 /* ZJSwitch.m in Sources */,

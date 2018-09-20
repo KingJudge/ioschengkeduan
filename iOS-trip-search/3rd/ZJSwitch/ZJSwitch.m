@@ -91,6 +91,14 @@
     }
 }
 
+-(void)setTextColor:(UIColor *)textColor{
+    if (_textColor != textColor) {
+        _textColor = textColor;
+        _onLabel.textColor = textColor;
+        _offLabel.textColor = textColor;
+    }
+}
+
 - (void)setTintColor:(UIColor *)tintColor
 {
     if (_tintColor != tintColor) {

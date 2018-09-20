@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"订单列表";
     [self.view addSubview:self.orderListTableview];
 }
 

@@ -8,7 +8,7 @@
 
 #import "waitDriverViewController.h"
 #import "driverInfo.h"
-@interface waitDriverViewController ()<MAMapViewDelegate>
+@interface waitDriverViewController ()<MAMapViewDelegate,driverInfoDelegate>
 
 @property (nonatomic, strong) MAPointAnnotation *startAnnotation;
 @property (nonatomic, strong) MAPointAnnotation *endAnnotation;
@@ -30,6 +30,7 @@
     self.navigationItem.title = @"等待司机接单";
     
     [self initMap];
+    [self setupData];
     [self.view addSubview:self.DriverInfo];
 
 }
@@ -47,10 +48,39 @@
 
 -(driverInfo *)DriverInfo{
     if (!_DriverInfo) {
-        _DriverInfo = [[driverInfo alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height-210, self.view.bounds.size.width, 200)];
+        _DriverInfo = [[driverInfo alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height-210, self.view.bounds.size.width, 141)];
         _DriverInfo.backgroundColor = [UIColor whiteColor];
+        _DriverInfo.delegate = self;
     }
     return _DriverInfo;
+}
+
+-(void)baojing:(UIButton *)button{
+    NSLog(@"aaaaaaaaaa");
+    UIAlertView *artview = [[UIAlertView alloc]initWithTitle:@"报警" message:@"如果情况紧急请点击确定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [artview show];
+}
+
+-(void)callDriv:(UIButton *)button{
+    NSLog(@"11011410086");
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"点击了====%ld",(long)buttonIndex);
+    UIWebView *callWebview = [[UIWebView alloc]init];
+    
+    switch (buttonIndex) {
+        case 0:
+            NSLog(@"没打成功");
+            break;
+        case 1:
+            NSLog(@"打电话了");
+            [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"13665121910"]]];
+            [self.view addSubview:callWebview];
+            break;
+        default:
+            break;
+    }
 }
 
 -(void)setupData{

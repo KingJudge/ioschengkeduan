@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface driverInfo : UIView
+@protocol driverInfoDelegate <NSObject>
+-(void)baojing:(UIButton *)button;
+-(void)callDriv:(UIButton *)button;
+@end
 
+@interface driverInfo : UIView
+@property (assign, nonatomic) id<driverInfoDelegate> delegate;
 @end
