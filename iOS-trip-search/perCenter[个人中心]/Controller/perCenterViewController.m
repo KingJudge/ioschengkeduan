@@ -9,6 +9,7 @@
 #import "perCenterViewController.h"
 #import "perHeaderView.h"
 #import "comPleteInfoViewController.h"
+#import "OrderListViewController.h"
 @interface perCenterViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong) perHeaderView *perHeader;
 @property (nonatomic ,strong) UITableView *perTableview;
@@ -110,6 +111,34 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"点击了==%@",_TitleArray[indexPath.row]);
+    OrderListViewController *orderList = [[OrderListViewController alloc]init];
+    switch (indexPath.row) {
+        case 0:
+            [self.navigationController pushViewController:orderList animated:YES];
+            break;
+            
+        case 1:
+            NSLog(@"1");
+            break;
+            
+        case 2:
+            NSLog(@"2");
+            break;
+        case 3:
+            NSLog(@"3");
+            break;
+        case 4:
+            NSLog(@"4");
+            break;
+        case 5:
+            NSLog(@"5");
+            break;
+        case 6:
+            NSLog(@"6");
+            break;
+        default:
+            break;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
