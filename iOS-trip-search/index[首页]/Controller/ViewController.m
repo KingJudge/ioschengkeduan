@@ -2,7 +2,7 @@
 //  ViewController.m
 //  iOS-trip-search
 //
-//  Created by hanxiaoming on 2017/5/24.
+//  Created by Aydin on 2017/5/24.
 //  Copyright © 2017年 Amap. All rights reserved.
 //
 
@@ -84,6 +84,8 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
 @property (nonatomic, strong) MAPointAnnotation *startAnnotation;
 @property (nonatomic, strong) MAPointAnnotation *endAnnotation;
 
+@property (nonatomic, strong) AMapLocalWeatherLive *weatherLiveView;
+
 @end
 
 @implementation ViewController
@@ -140,9 +142,18 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     //search
     self.search = [[AMapSearchAPI alloc] init];
     self.search.delegate = self;
+    
+    
 
 }
-
+- (void)onWeatherSearchDone:(AMapWeatherSearchRequest *)request response:(AMapWeatherSearchResponse *)response
+{
+    //解析response获取天气信息，具体解析见 Demo
+    
+    _weatherLiveView = [response.lives firstObject];
+    NSLog(@"%@，%@,%@",_weatherLiveView.weather,_weatherLiveView.temperature,_weatherLiveView.windDirection);
+    
+}
 - (void)initTitleButton
 {
     UIButton *titleButton = [[UIButton alloc] init];
@@ -304,7 +315,7 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     _switch2 = [[ZJSwitch alloc]initWithFrame:CGRectMake(0, 0, 60, 20)];
     _switch2.center = CGPointMake(10 + _switch2.bounds.size.width / 2.0, CGRectGetHeight(self.view.bounds) - 120 - _switch2.bounds.size.height / 2.0);
     _switch2.textColor = [UIColor blackColor];
-    _switch2.tintColor = [UIColor orangeColor];
+    _switch2.tintColor = [UIColor colorWithRed:245.f/255.f green:245.f/255.f blue:245.f/255.f alpha:1.0];
     _switch2.onTintColor = [UIColor orangeColor];
     _switch2.backgroundColor = [UIColor clearColor];
     _switch2.onText = @"立即";
@@ -415,6 +426,10 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     [self.titleButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -self.titleButton.currentImage.size.width, 0, self.titleButton.currentImage.size.width)];
     
     NSLog(@"title: %@", title);
+    AMapWeatherSearchRequest *request = [[AMapWeatherSearchRequest alloc]init];
+    request.city = title;
+    request.type = AMapWeatherTypeLive;
+    [self.search AMapWeatherSearch:request];
 }
 
 // 显示搜索&城市列表
