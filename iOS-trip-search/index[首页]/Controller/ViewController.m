@@ -151,7 +151,7 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     //解析response获取天气信息，具体解析见 Demo
     
     _weatherLiveView = [response.lives firstObject];
-    NSLog(@"%@，%@,%@",_weatherLiveView.weather,_weatherLiveView.temperature,_weatherLiveView.windDirection);
+    NSLog(@"%@,%@,%@",_weatherLiveView.weather,_weatherLiveView.temperature,_weatherLiveView.windDirection);
     
 }
 - (void)initTitleButton
@@ -381,6 +381,8 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
 {
     NSLog(@"resetForLocationChoose");
     //从确定呼叫返回
+    
+    //12313
     self.regeoSearchNeeded = YES;
     self.locationView.endLocation = nil;
     [self addPositionAnnotation:self.endAnnotation forLocation:nil];
@@ -392,6 +394,7 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     self.confirmButton.hidden = YES;
     self.choseCarView.hidden = YES;
     self.locationView.hidden = NO;
+    self.buttonLocation.hidden = NO;
 }
 
 - (void)updateCurrentCity:(MyCity *)currentCity
@@ -619,6 +622,8 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
     waitDriver.carType = self.carType;
     NSLog(@"lat====%f",self.startAnnotation.coordinate.latitude);
     NSLog(@"lng====%f",self.startAnnotation.coordinate.longitude);
+    NSLog(@"Elat====%f",self.endAnnotation.coordinate.latitude);
+    NSLog(@"Elng====%f",self.endAnnotation.coordinate.longitude);
     [self.navigationController pushViewController:waitDriver animated:YES];
 }
 
@@ -650,16 +655,6 @@ typedef NS_ENUM(NSInteger, CurrentAddressSettingType)
 -(void)mapBtnClick:(UIButton *)sender{
     NSLog(@"haha");
 }
-
-//- (void)onSettingAction:(UIButton *)sender
-//{
-//    NSLog(@"clear the address setting for home & company");
-//    [MyRecordManager sharedInstance].home = nil;
-//    [MyRecordManager sharedInstance].company = nil;
-//    [[MyRecordManager sharedInstance] clearHistory];
-//    
-//    [self.searchResultView updateAddressSetting];
-//}
 
 - (void)startLocationTapped:(UIButton *)sender
 {
